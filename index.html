@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8">
+  <title> Your dream holiday with 4CSE01 Group 4 !</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" src="script.js"></script>  
+
+
+</head>
+  
+<body>
+
+<div id="navBar">
+	<nav>
+		<label class="logo">Dream holidays</label>
+
+		<ul id = "navlist">
+			<li><button class="btn"><a href="#">Home page</a></button></li>
+			<li><button class="btn"><a href="#">Buy tickets</a></button></li>
+			<li><button class="btn"><a href="#">Gallery</a></button></li>
+			<li><button class="btn"><a href="#">Site map</a></button></li>
+			<li><button class="btn"><a href="#">Quiz</a></button></li>
+			<li><button class="btn"><a href="#">Student details</a></button></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="pageContent">
+	<div id="queryField">
+		<div id="thankYouText"> </div>
+		<form id="holidaysQuery" action="mailto:w1780616@my.westminster.ac.uk" method="post" enctype="text/plain" onsubmit="return clearForm()">
+			<div id="leftSide">
+					<label for="name">First name :  </label><br>
+					<div id="nameOutput" class="outputFieldText"></div>
+						<input type="text" name="name" id="name" size="20" placeholder="Your name">
+
+
+				<br><br>
+
+					<label for="sName">Surname :  </label><br>
+					<div id="sNameOutput" class="outputFieldText"></div>
+						<input type="text" name="sName" id="sName" size="20" placeholder="Your surname">
+
+				<br><br>
+
+					<label for="emailAdress">Email adress :  </label><br>
+					<div id="emailOutput" class="outputFieldText"></div>
+						<input type="email" name="emailAdress" id="emailAdress" size="20" placeholder="Your email adress">
+
+
+				<br><br>
+					<label for="queryType">Subject : </label><br>
+					<div id="queryOutput" class="outputFieldText"></div>
+						<select name="queryType" id="queryType">
+						<option value="select" selected disabled hidden>Please select</option>
+						<option value="Hotel Availability ">Hotel Availability</option>
+						<option value="CoVID Restrictions ">CoVID restrictions</option>
+						<option value="Refound request ">Refound request</option>
+					</select>
+
+			</div>
+
+			<div id="rightSide">
+				<label> Details :</label>
+						<div id="textOutput" class="outputFieldText"></div>
+					<fieldset id="field1">
+						<div id="textOutput" class="outputFieldText"></div>
+						<textarea name="textArea" id="textArea" rows="10" cols="50"></textarea>
+					</fieldset>
+					<br>
+
+
+			<div id="submitButton">
+				<button onclick="checkOptions(this.form)" type="button">Submit</button>
+			</div>
+
+			<div id="editButton">
+				<button onclick="editForm(this.form)" type="button">Edit</button>
+				<input type="submit" name="submit" value="Send">
+			</div>
+		</div>
+
+
+
+		</form>
+	</div>
+</div>
+
+
+<footer>
+	<div class="author"><a href="w1780616.html">
+		Author of the page
+		Andrzej Baum W1780616
+</div>
+</footer>
+
+
+</body>
+
+</html>
